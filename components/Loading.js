@@ -1,5 +1,5 @@
 import { Circle } from "better-react-spinkit";
-import Img from "next/image"
+import styled from "styled-components"
 
 function Loading() {
   return (
@@ -18,3 +18,5 @@ function Loading() {
 }
 
 export default Loading;
+
+const Img = styled.img``;
