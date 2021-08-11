@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { Avatar, IconButton } from "@material-ui/core";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import ChatIcon from "@material-ui/icons/Chat";
-import InsertEmoticonIcon from "@material-ui/icons/Chat";
+import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import { useCollection } from "react-firebase-hooks/firestore";
 import { useState } from "react";
 import firebase from "firebase";
