@@ -12,6 +12,7 @@ import firebase from "firebase";
 import Message from "../components/Message";
 import getRecipientEmail from "../utils/getRecipientEmail";
 import TimeAgo from "timeago-react";
+import SendIcon from '@material-ui/icons/Send';
 
 function ChatScreen({ chat, messages }) {
   const [user] = useAuthState(auth);
@@ -120,7 +121,8 @@ function ChatScreen({ chat, messages }) {
         <button hidden disabled={!input} type="submit" onClick={sendMessage}>
           Send Message
         </button>
-        <InsertEmoticonIcon />
+<IconButton>
+        <SendIcon onClick={sendMessage} /></IconButton>
       </InputContainer>
     </Container>
   );
