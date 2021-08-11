@@ -112,7 +112,6 @@ function ChatScreen({ chat, messages }) {
         <EndofMessage />
       </MessageContainer>
       <InputContainer>
-        <InsertEmoticonIcon />
         <Input
           autoFocus={true}
           value={input}
