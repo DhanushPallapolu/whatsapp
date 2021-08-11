@@ -13,7 +13,7 @@ function Login() {
         <title>Login</title>
       </Head>
       <LoginContainer>
-        <Logo src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" />
+        <Logo src="https://firebasestorage.googleapis.com/v0/b/whatsapp-sp.appspot.com/o/spchat.png?alt=media&token=be0717fb-54a5-4e4d-836f-3aefae34a5cb" />
         <Button onClick={signIn} variant="outlined">
           Sign In With Google
         </Button>
