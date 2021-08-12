@@ -120,7 +120,7 @@ function ChatScreen({ chat, messages }) {
         <button hidden disabled={!input} type="submit" onClick={sendMessage}>
           Send Message
         </button>
-<IconButton>
+<IconButton disabled={!input}>
         <SendIcon onClick={sendMessage} /></IconButton>
       </InputContainer>
     </Container>
