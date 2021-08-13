@@ -11,6 +11,7 @@ function Login() {
     <Container>
       <Head>
         <title>Login</title>
+            <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/whatsapp-sp.appspot.com/o/spchat.png?alt=media&token=be0717fb-54a5-4e4d-836f-3aefae34a5cb" />
       </Head>
       <LoginContainer>
         <Logo src="https://firebasestorage.googleapis.com/v0/b/whatsapp-sp.appspot.com/o/spchat.png?alt=media&token=be0717fb-54a5-4e4d-836f-3aefae34a5cb" />
