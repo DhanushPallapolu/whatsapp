@@ -18,6 +18,15 @@ function ChatScreen({ chat, messages }) {
   const [user] = useAuthState(auth);
   const router = useRouter();
   const [input, setInput] = useState("");
+  const [btnDisabled, setBtnDisabled] = useState(true);
+  
+ const checkInput = () => {
+   if(userEnteredValue.trim() != 0 && !input){ //if the user value isn't only spaces
+    setBtnDisabled(true) //active the add button
+  }else{
+    setBtnDisabled(false)
+  }
+ }
 
   const showMessages = () => {
     if (messagesSnapshot) {
@@ -116,11 +125,12 @@ function ChatScreen({ chat, messages }) {
           autoFocus={true}
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          onKeyUp={checkInput}
         />
         <button hidden disabled={!input} type="submit" onClick={sendMessage}>
           Send Message
         </button>
-<IconButton disabled={!input}>
+<IconButton disabled={btnDisabled}>
         <SendIcon onClick={sendMessage} /></IconButton>
       </InputContainer>
     </Container>
