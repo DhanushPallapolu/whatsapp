@@ -62,6 +62,10 @@ function ChatScreen({ chat, messages }) {
 
   const sendMessage = (e) => {
     e.preventDefault();
+    if(userEnteredValue.trim() != 0 && !input){ //if the user value isn't only spaces
+ //do nothin
+  }else{
+    //send Message
 
     db.collection("users").doc(user.uid).set(
       {
@@ -77,6 +81,8 @@ function ChatScreen({ chat, messages }) {
       photoURL: user.photoURL,
     });
     setInput("");
+  }
+    
   };
 
   const recipient = recipientSnapshot?.docs?.[0]?.data();
