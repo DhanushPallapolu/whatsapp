@@ -62,16 +62,11 @@ function ChatScreen({ chat, messages }) {
 
   const sendMessage = (e) => {
     e.preventDefault();
-    if(userEnteredValue.trim() != 0 && !input){ //if the user value isn't only spaces
  db.collection("users").doc(user.uid).set(
       {
         lastSeen: firebase.firestore.FieldValue.serverTimestamp(),
       },
-      { merge: true })
-  }else{
-    //send Message
-   }
-    
+      { merge: true })    
     );
 
     db.collection("chats").doc(router.query.id).collection("messages").add({
@@ -136,7 +131,7 @@ function ChatScreen({ chat, messages }) {
         <button hidden disabled={!input} type="submit" onClick={sendMessage}>
           Send Message
         </button>
-<IconButton disabled={btnDisabled}>
+<IconButton disabled={!input}>
         <SendIcon onClick={sendMessage} /></IconButton>
       </InputContainer>
     </Container>
