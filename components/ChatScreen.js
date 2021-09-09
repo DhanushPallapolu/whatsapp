@@ -67,10 +67,10 @@ function ChatScreen({ chat, messages }) {
       {
         lastSeen: firebase.firestore.FieldValue.serverTimestamp(),
       },
-      { merge: true }
+      { merge: true })
   }else{
     //send Message
-
+   }
     
     );
 
