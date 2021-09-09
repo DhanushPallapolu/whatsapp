@@ -75,8 +75,6 @@ function ChatScreen({ chat, messages }) {
       photoURL: user.photoURL,
     });
     setInput("");
-  }
-    
   };
 
   const recipient = recipientSnapshot?.docs?.[0]?.data();
