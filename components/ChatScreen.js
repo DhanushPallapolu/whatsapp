@@ -22,9 +22,9 @@ function ChatScreen({ chat, messages }) {
   
  const checkInput = () => {
    if(userEnteredValue.trim() != 0 && !input){ //if the user value isn't only spaces
-    setBtnDisabled(true) //active the add button
+    setBtnDisabled(false) //active the add button
   }else{
-    setBtnDisabled(false)
+    setBtnDisabled(true)
   }
  }
 
@@ -63,15 +63,15 @@ function ChatScreen({ chat, messages }) {
   const sendMessage = (e) => {
     e.preventDefault();
     if(userEnteredValue.trim() != 0 && !input){ //if the user value isn't only spaces
- //do nothin
-  }else{
-    //send Message
-
-    db.collection("users").doc(user.uid).set(
+ db.collection("users").doc(user.uid).set(
       {
         lastSeen: firebase.firestore.FieldValue.serverTimestamp(),
       },
       { merge: true }
+  }else{
+    //send Message
+
+    
     );
 
     db.collection("chats").doc(router.query.id).collection("messages").add({
