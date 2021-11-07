@@ -51,7 +51,7 @@ function ChatScreen({ chat, messages }) {
       .collection("chats")
       .doc(router.query.id)
       .collection("messages")
-      .orderBy("timestamp", "asc")
+      .orderBy("timestamp", "desc")
   );
 
   const [recipientSnapshot] = useCollection(
