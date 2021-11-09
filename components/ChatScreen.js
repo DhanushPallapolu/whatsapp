@@ -85,7 +85,7 @@ function ChatScreen({ chat, messages }) {
     db
       .collection("chats")
       .doc(router.query.id)
-      .collection("messages").FieldValue.delete()
+      .collection("messages").delete()
   );
   }
 
