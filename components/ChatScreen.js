@@ -4,6 +4,7 @@ import { auth, db } from "../firebase";
 import { useRouter } from "next/router";
 import { Avatar, IconButton } from "@material-ui/core";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+import DeleteIcon from '@material-ui/icons/Delete';
 import ChatIcon from "@material-ui/icons/Chat";
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import { useCollection } from "react-firebase-hooks/firestore";
@@ -107,11 +108,9 @@ function ChatScreen({ chat, messages }) {
         </HeaderInformation>
         <HeaderIcons>
           <IconButton>
-            <ChatIcon />
+            <DeleteIcon />
           </IconButton>
-          <IconButton>
-            <MoreVertIcon />
-          </IconButton>
+          
         </HeaderIcons>
       </Header>
       <MessageContainer>
