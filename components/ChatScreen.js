@@ -80,6 +80,14 @@ function ChatScreen({ chat, messages }) {
 
   const recipient = recipientSnapshot?.docs?.[0]?.data();
   const recipientEmail = getRecipientEmail(chat.users, user);
+  const deleteChatMessages = () => {
+    useCollection(
+    db
+      .collection("chats")
+      .doc(router.query.id)
+      .collection("messages").FieldValue.delete()
+  );
+  }
 
   return (
     <Container>
@@ -108,7 +116,7 @@ function ChatScreen({ chat, messages }) {
         </HeaderInformation>
         <HeaderIcons>
           <IconButton>
-            <DeleteIcon />
+            <DeleteIcon onClick={deleteChatMessages} />
           </IconButton>
           
         </HeaderIcons>
