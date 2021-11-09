@@ -11,7 +11,6 @@ function Loading() {
           style={{ marginBottom: 10 }}
           height={200}
         />
-        <Circle color="#0094FF" size={60} />
       </div>
     </center>
   );
