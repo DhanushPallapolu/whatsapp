@@ -140,14 +140,27 @@ const MessageContainer = styled.div`
   background-color: #e5ded8;
   height: 90vh;
   overflow-y: scroll;
-  ::-webkit-scrollbar {
-    display: none;
-  }
+  /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
 
-  -ms-overflow-style {
-    display: none;
-  }
-  scrollbar-width: none;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #919191; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  width: 10px; 
+}
+
 `;
 const Header = styled.div`
   position: sticky;
