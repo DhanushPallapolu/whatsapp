@@ -147,12 +147,13 @@ const MessageContainer = styled.div`
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #919191; 
+
+  background: transparent; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #919191; 
 }
 
 
