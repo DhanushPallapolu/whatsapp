@@ -147,20 +147,16 @@ const MessageContainer = styled.div`
 
 /* Track */
 ::-webkit-scrollbar-track {
-
-  background: transparent; 
+  background: #e5ded8; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #919191; 
+  background: #dcf8c6; 
 }
 
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  width: 10px; 
-}
+
 
 `;
 const Header = styled.div`
