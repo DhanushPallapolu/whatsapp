@@ -120,6 +120,7 @@ function ChatScreen({ chat, messages }) {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyUp={checkInput}
+          placeholder="Type a message"
         />
         <button hidden disabled={!input} type="submit" onClick={sendMessage}>
           Send Message
