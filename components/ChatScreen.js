@@ -142,7 +142,7 @@ const MessageContainer = styled.div`
   overflow-y: scroll;
   /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 70px;
 }
 
 /* Track */
