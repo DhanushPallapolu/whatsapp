@@ -152,7 +152,7 @@ const MessageContainer = styled.div`
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #0099ff; 
+  background: gray; 
 }
 
 
