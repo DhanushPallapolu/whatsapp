@@ -35,7 +35,7 @@ const MessageElement = styled.p`
 const Sender = styled(MessageElement)`
   margin-left: auto;
   background-color: #dcf8c6;
-  color: #fff;
+  color: #000;
 `;
 
 const Reciever = styled(MessageElement)`
@@ -44,7 +44,7 @@ const Reciever = styled(MessageElement)`
 `;
 
 const Timestamp = styled.span`
-  color: #fff;
+  color: gray;
   padding: 10px;
   font-size: 9px;
   position: absolute;
