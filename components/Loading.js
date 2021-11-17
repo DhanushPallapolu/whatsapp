@@ -1,8 +1,14 @@
 import { Circle } from "better-react-spinkit";
 import styled from "styled-components"
+import Head from "next/head";
 
 function Loading() {
   return (
+    <>
+    <Head>
+      <title>Loading - Spronklle Chat</title>
+        <meta name="description" content="A all new 1:1 personal chatting, only with you email address! No phone number required!" />
+    </Head>
     <center style={{ display: "grid", placeItems: "center", height: "100vh" }}>
       <div>
         <Img
@@ -13,6 +19,7 @@ function Loading() {
         />
       </div>
     </center>
+</>
   );
 }
 
