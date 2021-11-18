@@ -120,6 +120,9 @@ const SearchInput = styled.input`
 `;
 const SidebarButton = styled(Button)`
   width: 100%;
+  postion: fixed;
+  background-color: white;
+  z-index: 99999;
   &&& {
     border-top: 1px solid whitesmoke;
     border-bottom: 1px solid whitesmoke;
