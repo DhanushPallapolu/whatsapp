@@ -41,9 +41,7 @@ export async function getServerSideProps(context) {
       ...messages,
       timestamp: messages.timestamp.toDate().getTime(),
     }));
-  return{
-   fallback: false;
-  }
+ 
   const chatRes = await ref.get();
   const chat = {
     id: chatRes.id,
